@@ -13,7 +13,7 @@
 8. Wire Stripper 
 9. Soldering Iron 
 10. Solder
-![Listed Components in front of a Soldering Station](TutorialImages/AllCompontents.jpeg)
+![Listed Components in front of a Soldering Station](TutorialImages/AllCompontents.jpeg =640x480)
 
 ## Assembly
 1.  Using the Wire Cutters, cut a 2 inch segment of both the Red and Black 18 gauge flexible wire.\
