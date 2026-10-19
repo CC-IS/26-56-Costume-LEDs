@@ -1,5 +1,4 @@
-# Makerspace Project 26-56
-# Costume LEDs
+# Makerspace Project 26-56 Costume LEDs
 *If you are here from the QR code on the Zine or the link in the Makerpedia, feel free to skip to the [Software Section](#software). Otherwise start with the [Hardware Section](#hardware)*
 ## Hardware 
 ### Required Equipment/Components
