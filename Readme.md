@@ -1,5 +1,5 @@
-# Makerspace Project xyz 
-# Add LEDs to your Clothes
+# Makerspace Project 26-56
+# Costume LEDs
 *If you are here from the QR code on the Zine or the link in the Makerpedia, feel free to skip to the [Software Section](#software). Otherwise start with the [Hardware Section](#hardware)*
 ## Hardware 
 ### Required Equipment/Components
@@ -19,7 +19,7 @@
 1.  Using the Wire Cutters, cut a 2 inch segment of both the Red and Black 18 gauge flexible wire.\
 Using the Wire Strippers, strip one of the ends on each wire (the stripped segment should be about 5mm long).\
 Using the soldering iron and the solder, tin the stripped end of the Red wire. Repeat with the black wire.\
-![Tinned Red and Black wire ends](TutorialImages/AllCompontents.jpeg)
+![Tinned Red and Black wire ends](TutorialImages/TinnedRB.jpeg)
 2. Repeat Step 1. with the third wire. Make sure that this third wire is a different color.
 3. Solder the Red **tinned** wire to the +5V pad on the LED Strip.
 4. Solder the third **tinned** wire to the Din pad on the LED Strip.
@@ -48,7 +48,7 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 
 3. Download and install Platform.io to your VS Code using the instructions presented here: [Download PlatformIO IDE](https://platformio.org/platformio-ide)
 
-4. Clone this repository to your device by running the following command on your VS code terminal: 'git clone <insert address here>'
+4. Clone this repository to your device by running the following command on your VS code terminal: `git clone https://github.com/penalemesc/MakerspaceLEDsOnClothesWorshop`
 
 ### Uploading the code to the ESP32
 1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button.
@@ -65,7 +65,8 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
     - :file_folder: : Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
     - :electric_plug: : Selects the port where your code will be uploaded to. How to use this is explained in 4.
 
-3. Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing"
+3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository and open it.   
+You should now be in a window which has "MakerspaceLEDsOnClothesWorshop" as the title on the Explorer and all of the files for this used in this demo.
 
 4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to
 
