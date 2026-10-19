@@ -51,7 +51,7 @@ void loop() {
   for (int i = 0; i < numLeds; i ++){
     leds[i] = CRGB::Red;
     FastLED.show();
-    delay(100);
+    delay(200);
   }
   delay(1000);
 
@@ -79,6 +79,9 @@ void loop() {
       delay(250);
     }
   }
+  
+  // Call our function to blank our leds
+  blankLeds(leds, numLeds);
 
   // 3. Make all leds a given colour at the same time
   fill_solid(leds, numLeds, CRGB::Blue); 

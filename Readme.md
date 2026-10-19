@@ -13,7 +13,7 @@
 8. Wire Stripper 
 9. Soldering Iron 
 10. Solder
-![Listed Components in front of a Soldering Station](TutorialImages/AllCompontents.jpeg | width= 100)
+![Listed Components in front of a Soldering Station](TutorialImages/AllCompontents.jpeg)
 
 ## Assembly
 1.  Using the Wire Cutters, cut a 2 inch segment of both the Red and Black 18 gauge flexible wire.\
@@ -47,9 +47,25 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 
 4. Clone this repository to your device by running the following command on your VS code terminal: 'git clone <insert address here>'
 
-5. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button.
+### Uploading the code to the ESP32
+1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button.
 
-6. 
+2. Assuming that set up was done correctly, at the bottom of your screen there is a row with a multitude of Symbols and words, the following are the ones we care about: 
+![Symbols that matter for our implementation](TutorialImages/PlatformioSymbols.png)
+    - :house: : Platformio Home, here you can access your projects, libraries and many other options
+    - :heavy_check_mark: : Build our project
+    - :arrow_right: : Upload our project to the connected device
+    - :wastebasket: : Cleans the memory of the ESP32. Sometimes whenever we upload our files, our software will not work properly because there are leftovers from previous versions. We can fix that by cleaning it.
+    - :test_tube: Runs the code in [test](test). For the purposes of this demo do not concern yourself with it
+    - :electric_plug: Serial Monitor. If you are using a serial connection to debug your code, this is where you can see the information sent. Note: serial communication is not present in this code, ask a programmer makerspace manager to learn how to do that!
+    - New terminal: Opens a new terminal. For the purposes of this demo do not concern yourself with it
+    - :file_folder: : Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
+    - :electric_plug: : Selects the port where your code will be uploaded to. How to use this is explained in 4.
+
+3. Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing"
+
+4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to
+
 ## Project Folder Structure explanation
 * [include](include): Automatically created folder which you can use to store the header files for your projects when using multiple files. It is not something that you should concern yourself with for now, unless you want to dig deeper into coding.
 * [lib](lib): Intended to store private libraries. Again it is not something that you should concern yourself with for now, unless you want to dig deeper into coding.
