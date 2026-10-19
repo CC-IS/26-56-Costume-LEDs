@@ -39,9 +39,10 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
     - If you do not have git installed in your device, you need to do that, and can do so here: [Install Git](https://git-scm.com/install/mac)
 
 2. Install the C/C++ extensions to VS Code like so:
-    - CLick on extensions \ ![The extensions logo](TutorialImages/ExtensionsLogo.png)
-    - Search for "C++" and click on the one called "C/C++ DevTools" made by Microsoft\ 
-    ![The C/C++ DevTools Logo](TutorialImages/C++Logo.png) \ It will install a set of extensions which will be useful in the development of these. 
+    - CLick on extensions\ ![The extensions logo](TutorialImages/ExtensionsLogo.png)
+    - Search for "C++" and click on the one called "C/C++ DevTools" made by Microsoft.  
+    ![The C/C++ DevTools Logo](TutorialImages/C++Logo.png).  
+    It will install a set of extensions which will be useful in the development of these. 
     Note: If C/C++ by microsoft are not installed by default, install those as well!
 
 3. Download and install Platform.io to your VS Code using the instructions presented here: [Download PlatformIO IDE](https://platformio.org/platformio-ide)
