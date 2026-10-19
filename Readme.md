@@ -75,8 +75,7 @@ The specific port number and name might be different in your device, but the bas
 
 5. Ensure that you are working on the correct project by clicking on :file_folder: and selecting "26-56-Costume-LEDs".
 
-6. We are now ready to upload our project! 
-    - If you soldered your third wire to a different pin number than the one I used (2) go to [main.cpp](src/main.cpp), and change the value in line 11 to whichever pin number that you soldered it.
+6. We are now ready to upload our project! If you soldered your third wire to a different pin number than the one I used (2) go to [main.cpp](src/main.cpp), and change the value in line 11 to whichever pin number that you soldered it.
 Click on :arrow_right:, this will open the terminal and start building the project. It might take a bit because it needs to download the libraries that we are using. After it finishes building it will start uploading to our board and assuming that everything went correctly it will show a "SUCCESS" message in green:
 ![How the success message looks in ther terminal](TutorialImages/UploadSuccess.png)
 If something went wrong, it will instead show a "FAILED" message in red.
