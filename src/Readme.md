@@ -6,14 +6,14 @@ As noted in [the main Readme's software section](Readme.md) this code is meant a
 I recommend searching for other examples online or experimenting yourself! Add some extra components! See if with the code provided you can add more variables or parameters that allow you better control of the presented example!
 
 ## Images of the Examples present in [main.cpp](src/main.cpp)
-1. Incrementally turn on the LEDS
-![Incremental red](/TutorialImages/incrementalRed.gif)
+1. Incrementally turn on the LEDS  
+![Incremental red example](/TutorialImages/incrementalRed.gif)
 
 2. Make one of our leds move from one side of the strip to the other 2 times
-<video src= "TutorialImages/travellingGreen.mp4" width="50%" controls></video>
+![Moving green LED](/TutorialImages/travellingGreen.gif)
 
 3. Make all leds a given colour at the same time
-<video src= "TutorialImages/blueOn.mp4" width="50%" controls></video>
+![All LEDs turning on blue at once](/TutorialImages/blueOn.gif)
 
 4. Make a rainbow with our leds
-![LEDs making a rainbow](TutorialImages/rainbow.jpeg)
+![LEDs making a rainbow](/TutorialImages/rainbow.jpeg)
