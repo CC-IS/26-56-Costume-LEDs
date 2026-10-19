@@ -48,27 +48,45 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 3. Download and install Platform.io to your VS Code using the instructions presented here: [Download PlatformIO IDE](https://platformio.org/platformio-ide)
 
 4. Clone this repository to your device by running the following command on your VS code terminal:  
-`git clone https://github.com/penalemesc/MakerspaceLEDsOnClothesWorshop`
+`git clone https://github.com/CC-IS/26-56-Costume-LEDs.git`
 
 ### Uploading the code to the ESP32
-1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button.
+1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button. 
 
 2. Assuming that set up was done correctly, at the bottom of your screen there is a row with a multitude of Symbols and words, the following are the ones we care about: 
 ![Symbols that matter for our implementation](TutorialImages/PlatformioSymbols.png)
-    - :house: : Platformio Home, here you can access your projects, libraries and many other options
-    - :heavy_check_mark: : Build our project
-    - :arrow_right: : Upload our project to the connected device
-    - :wastebasket: : Cleans the memory of the ESP32. Sometimes whenever we upload our files, our software will not work properly because there are leftovers from previous versions. We can fix that by cleaning it.
-    - :test_tube: Runs the code in [test](test). For the purposes of this demo do not concern yourself with it
-    - :electric_plug: Serial Monitor. If you are using a serial connection to debug your code, this is where you can see the information sent. Note: serial communication is not present in this code, ask a programmer makerspace manager to learn how to do that!
+    - :house:: Platformio Home, here you can access your projects, libraries and many other options
+    - :heavy_check_mark:: Build our project
+    - :arrow_right:: Upload our project to the connected device
+    - :wastebasket:: Cleans the memory of the ESP32. Sometimes whenever we upload our files, our software will not work properly because there are leftovers from previous versions. We can fix that by cleaning it.
+    - :test_tube:: Runs the code in [test](test). For the purposes of this demo do not concern yourself with it
+    - :electric_plug:: Serial Monitor. If you are using a serial connection to debug your code, this is where you can see the information sent. Note: serial communication is not present in this code, ask a programmer makerspace manager to learn how to do that!
     - New terminal: Opens a new terminal. For the purposes of this demo do not concern yourself with it
-    - :file_folder: : Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
-    - :electric_plug: : Selects the port where your code will be uploaded to. How to use this is explained in 4.
+    - :file_folder:: Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
+    - :electric_plug:: Selects the port where your code will be uploaded to. How to use this is explained in 4.
 
-3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository and open it.  
-You should now be in a window which has "MakerspaceLEDsOnClothesWorshop" as the title on the Explorer and all of the files for this used in this demo.
+3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository and open it.
+You should now be in a window which has "26-56-Costume-LEDs" as the title on the Explorer section and all of the files used in this demo.
 
-4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to
+4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to. 
+Typically you are able to tell that it is the ESP32 because the given port will say "USB JTAG/serial debug unit..." like so:
+![Example of the menu that pops up at the top of the screen, with the ESP32 port highlighted in light grey](TutorialImages/Ports.png)
+The specific port number and name might be different in your device, but the base name of "USB JTAG/serial debug unit..." should always be there as a guide.
+
+5. Ensure that you are working on the correct project by clicking on :file_folder: and selecting "26-56-Costume-LEDs".
+
+6. We are now ready to upload our project! 
+    - If you soldered your third wire to a different pin number than the one I used (2) go to [main.cpp](src/main.cpp), and change the value in line 11 to whichever pin number that you soldered it.
+Click on :arrow_right:, this will open the terminal and start building the project. It might take a bit because it needs to download the libraries that we are using. After it finishes building it will start uploading to our board and assuming that everything went correctly it will show a "SUCCESS" message in green:
+![How the success message looks in ther terminal](TutorialImages/UploadSuccess.png)
+If something went wrong, it will instead show a "FAILED" message in red.
+
+7. Assuming that everything went well the LED's should start to light up with our example patterns! Go to [main.cpp](src/main.cpp) and figure out how to modify the code to have the LEDs do some fun new functions! Or ask a manager how you can potentially add more functionality!
+    - If the LEDs are not lighting up there are a couple of potential failure points which you can check by disconnecting your board from the computer: 
+        - Check that you are connected to the correct pin in code, i.e. check that the number in line 11 of [main.cpp](src/main.cpp) is the same as the one you are physically connected to on the board.
+        - Check your solder connections! Sometimes depending on how good the connection is, it might have disconnected. It is also important to check for shorts, a short in simple terms is defined as two connected pins that should not be connected. Sometimes causing the electronics to smoke. In this case it is likely that a short is caused in the G and 5V pins since those are closest to one another.
+        - Check that all of your wires are connected on both ends!
+        - If the LED strip is lighting up and it is not how you expect it, that likely means that your failure is in the ground connection in that at one of the two ends it is not properly soldered.
 
 ## Project Folder Structure explanation
 * [include](include): Automatically created folder which you can use to store the header files for your projects when using multiple files. It is not something that you should concern yourself with for now, unless you want to dig deeper into coding.
