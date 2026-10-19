@@ -9,11 +9,11 @@ I recommend searching for other examples online or experimenting yourself! Add s
 1. Incrementally turn on the LEDS  
 ![Incremental red example](/TutorialImages/incrementalRed.gif)
 
-2. Make one of our leds move from one side of the strip to the other 2 times
+2. Make one of our leds move from one side of the strip to the other 2 times  
 ![Moving green LED](/TutorialImages/travellingGreen.gif)
 
-3. Make all leds a given colour at the same time
+3. Make all leds a given colour at the same time  
 ![All LEDs turning on blue at once](/TutorialImages/blueOn.gif)
 
-4. Make a rainbow with our leds
+4. Make a rainbow with our leds  
 ![LEDs making a rainbow](/TutorialImages/rainbow.jpeg)
