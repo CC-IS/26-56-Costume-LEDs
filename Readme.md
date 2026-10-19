@@ -24,14 +24,13 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 4. Solder the third **tinned** wire to the Din pad on the LED Strip.
 5. Solder the Black **tinned** wire to the G pad on the LED Strip.\
 ![All wires soldered to the LED strip](TutorialImages/SolderedLED.jpeg)
-6. On the non-soldered end of the Red wire, do step 1. again.
-7. On the non-soldered end of the Black wire, do step 1. again.
-8. On the non-soldered end of the third wire, do step 1. again.
-9. Solder the newly tinned end of the Red wire to the 5V pin hole on the ESP32.
-10. Solder the newly tinned end of the Black wire to the G pin hole on the ESP32.
-11. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN PADS. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)  
+6. On the non-soldered end of the Red, Black and Third wires, do step 1. again.
+7. Solder the newly tinned end of the Red wire to the 5V pin hole on the ESP32.
+8. Solder the newly tinned end of the Black wire to the G pin hole on the ESP32.
+9. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN PADS. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)  
 ![Soldered ESP32 with the third wire being green color soldered to pin 2](TutorialImages/SolderedESP32.jpeg)
-12. Your hardware is now fully assembled, move on to the [Software](#software) section to set up your board!
+10. Your hardware is now fully assembled, move on to the [Software](#software) section to set up your board!
+
 ## Software 
 ### Set-up
 1. Download and install VS Code using the instruction presented here: [Download Visual Studio Code](https://code.visualstudio.com/download?_exp_download=d53503e735)
@@ -51,7 +50,7 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 `git clone https://github.com/CC-IS/26-56-Costume-LEDs.git`
 
 ### Uploading the code to the ESP32
-1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOt button. 
+1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOT button. 
 
 2. Assuming that set up was done correctly, at the bottom of your screen there is a row with a multitude of Symbols and words, the following are the ones we care about: 
 ![Symbols that matter for our implementation](TutorialImages/PlatformioSymbols.png)
