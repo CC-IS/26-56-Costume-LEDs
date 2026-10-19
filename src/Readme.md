@@ -5,7 +5,7 @@ As noted in [the main Readme's software section](Readme.md) this code is meant a
 
 I recommend searching for other examples online or experimenting yourself! Add some extra components! See if with the code provided you can add more variables or parameters that allow you better control of the presented example!
 
-## Images of the Examples present in [main.cpp](src/main.cpp)
+## Images of the Examples present in [main.cpp](main.cpp)
 1. Incrementally turn on the LEDS  
 ![Incremental red example](/TutorialImages/incrementalRed.gif)
 
