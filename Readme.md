@@ -86,6 +86,9 @@ If something went wrong, it will instead show a "FAILED" message in red.
         - Check that all of your wires are connected on both ends!
         - If the LED strip is lighting up and it is not how you expect it, that likely means that your failure is in the ground connection in that at one of the two ends it is not properly soldered.
 
+8. Now that (hopefully) the software is all set up with your own code, and everything is up and running you should attach the LEDs and the ESP32 to your clothes! Use whichever method you want, you can use hot glue, super glue, stitching or even the adhesive backing on most LED Strips!
+Once they are attached, fish out your portable charger and plug your ESP32 in! Assuming that the code is properly working then it will start lighting up in whichever way you coded it to!
+
 ## Project Folder Structure explanation
 * [include](include): Automatically created folder which you can use to store the header files for your projects when using multiple files. It is not something that you should concern yourself with for now, unless you want to dig deeper into coding.
 * [lib](lib): Intended to store private libraries. Again it is not something that you should concern yourself with for now, unless you want to dig deeper into coding.
