@@ -30,7 +30,7 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 8. On the non-soldered end of the third wire, do step 1. again.
 9. Solder the newly tinned end of the Red wire to the 5V pin hole on the ESP32.
 10. Solder the newly tinned end of the Black wire to the G pin hole on the ESP32.
-11. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN PADS. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)\ 
+11. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN PADS. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)  
 ![Soldered ESP32 with the third wire being green color soldered to pin 2](TutorialImages/SolderedESP32.jpeg)
 12. Your hardware is now fully assembled, move on to the [Software](#software) section to set up your board!
 ## Software 
@@ -39,10 +39,11 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
     - If you do not have git installed in your device, you need to do that, and can do so here: [Install Git](https://git-scm.com/install/mac)
 
 2. Install the C/C++ extensions to VS Code like so:
-    - CLick on extensions\ ![The extensions logo](TutorialImages/ExtensionsLogo.png)
+    - CLick on extensions 
+    ![The extensions logo](TutorialImages/ExtensionsLogo.png)
     - Search for "C++" and click on the one called "C/C++ DevTools" made by Microsoft.  
     ![The C/C++ DevTools Logo](TutorialImages/C++Logo.png).  
-    It will install a set of extensions which will be useful in the development of these. 
+    It will install a set of extensions which will be useful in the development of these.  
     Note: If C/C++ by microsoft are not installed by default, install those as well!
 
 3. Download and install Platform.io to your VS Code using the instructions presented here: [Download PlatformIO IDE](https://platformio.org/platformio-ide)
