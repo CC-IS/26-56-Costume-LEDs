@@ -65,7 +65,8 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
     - :file_folder:: Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
     - :electric_plug:: Selects the port where your code will be uploaded to. How to use this is explained in 4.
 
-3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository and open it.
+
+3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository, and open it.
 You should now be in a window which has "26-56-Costume-LEDs" as the title on the Explorer section and all of the files used in this demo.
 
 4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to. 
