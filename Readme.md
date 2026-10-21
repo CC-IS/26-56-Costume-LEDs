@@ -27,7 +27,7 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 6. On the non-soldered end of the Red, Black and Third wires, do step 1. again.
 7. Solder the newly tinned end of the Red wire to the 5V pin hole on the ESP32.
 8. Solder the newly tinned end of the Black wire to the G pin hole on the ESP32.
-9. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN PADS. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)  
+9. Solder the newly tinned end of the third wire to one of the other numbered pin pads in the ESP32 (**NOTE: DO NOT SOLDER THIS WIRE TO THE 3.3, 20 OR 21 PIN HOLES. CHOOSE ANY OF THE OTHER 0-10 PIN PADS THAT CAN BE SEEN IN THE BACK OF THE BOARD**)  
 ![Soldered ESP32 with the third wire being green color soldered to pin 2](TutorialImages/SolderedESP32.jpeg)
 10. Your hardware is now fully assembled, move on to the [Software](#software) section to set up your board!
 
@@ -49,10 +49,13 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
 4. Clone this repository to your device by running the following command on your VS code terminal:  
 `git clone https://github.com/CC-IS/26-56-Costume-LEDs.git`
 
-### Uploading the code to the ESP32
-1. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOT button. 
 
-2. Assuming that set up was done correctly, at the bottom of your screen there is a row with a multitude of Symbols and words, the following are the ones we care about: 
+### Uploading the code to the ESP32
+1. In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository, and open it. You should now be in a window which has "26-56-Costume-LEDs" as the title on the Explorer section and all of the files used in this demo.
+
+2. Connect your ESP32 to your computer using the USB-C data transfer cable. If your ESP32 is not recognised by your computer, press and hold the BOOT button, and press and release the RST button as you keep holding the BOOT button. 
+
+3. Assuming that set up was done correctly, at the bottom of your screen there is a row with a multitude of Symbols and words, the following are the ones we care about: 
 ![Symbols that matter for our implementation](TutorialImages/PlatformioSymbols.png)
     - :house:: Platformio Home, here you can access your projects, libraries and many other options
     - :heavy_check_mark:: Build our project
@@ -63,9 +66,6 @@ Using the soldering iron and the solder, tin the stripped end of the Red wire. R
     - New terminal: Opens a new terminal. For the purposes of this demo do not concern yourself with it
     - :file_folder:: Switch Platformio Project Environment. If you are working on multiple projects at once, selecting it will allow you to switch between them.
     - :electric_plug:: Selects the port where your code will be uploaded to. How to use this is explained in 4.
-
-
-3. <!-- Open Platformio home by pressing on :house:. Go to the projects tab and select "Add Existing". Find the folder where you cloned this repository to and click 'Open "MakerspaceLEDsOnClothesWorshop"'.This adds the project to your  --> In VS Code go to File -> Open Folder and in the pop up window find the folder that was created when you cloned the repository, and open it. You should now be in a window which has "26-56-Costume-LEDs" as the title on the Explorer section and all of the files used in this demo.
 
 4. Click on the second :electric_plug: (furthest right, close to the copilot symbol), it will bring up a menu at the top of your screen where you will select the port in which the ESP32 is connected to. 
 Typically you are able to tell that it is the ESP32 because the given port will say "USB JTAG/serial debug unit..." like so:
